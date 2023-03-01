@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+<style>
+body {
+  background-image: url('https://th.bing.com/th/id/OIP.XBpiiNNN7ROlZPbUZtrjWwHaE7?pid=ImgDet&w=1000&h=666&rs=1');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+h1 {
+	color: white;
+   }
+label
+   {
+      color: white;
+   }
+</style>
+    
+  </head>
+  <body>
+<center>
+    <h1>University Registration Form</h1>
+    <form action="submit.php" method="POST">
+      <label for="name">Full Name:</label>
+      <input type="text" id="name" name="name" required><br><br>
+      
+      <label for="email">Email Address:</label>
+      <input type="email" id="email" name="email" required><br><br>
+      
+      <label for="phone">Phone Number:</label>
+      <input type="tel" id="phone" name="phone" required><br><br>
+      
+      <label for="program">Program of Study:</label>
+      <input type="text" id="program" name="program" required><br><br>
+      
+      <label for="year">Year of Study:</label>
+      <select id="year" name="year" required>
+        <option value="">Select</option>
+        <option value="1st Year">1st Year</option>
+        <option value="2nd Year">2nd Year</option>
+        <option value="3rd Year">3rd Year</option>
+        <option value="4th Year">4th Year</option>
+        <option value="5th Year">5th Year</option>
+      </select><br><br>
+      
+      <label for="gender">Gender:</label>
+      <input type="radio" id="male" name="gender" value="Male" required>
+      <label for="male">Male</label>
+      <input type="radio" id="female" name="gender" value="Female">
+      <label for="female">Female</label><br><br>
+      
+      <label for="agree">I agree to the terms and conditions:</label>
+      <input type="checkbox" id="agree" name="agree" required><br><br>
+      
+      <input type="submit" value="Submit">
+      <input type="reset" value="Reset">
+    </form>
+</center>
+  </body>
+</html>
